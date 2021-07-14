@@ -5,7 +5,8 @@ class ApplicationController < ActionController::Base
   # ================================
 
   def play_rock
-    redirect_to("https://www.wikipedia.org")
+    #render({:html => "<h1>hello world</h1>".html_safe})
+    render({ :template=> "game_templates/user_rock.html.erb"})
   end
 
   def play_paper
